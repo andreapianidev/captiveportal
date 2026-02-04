@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WiFi Portal Cloud - Demo Captive Portal
 
-## Getting Started
+Demo funzionante di un sistema Captive Portal WiFi per raccolta contatti e marketing.
 
-First, run the development server:
+## Screenshot
+
+### Homepage
+Landing page con presentazione del servizio.
+
+### Captive Portal
+Pagina che vede il cliente quando si connette al WiFi.
+
+### Dashboard Admin
+Pannello di controllo con statistiche e grafici.
+
+## Demo Live
+
+**Credenziali Demo:**
+- Email: `demo@esempio.it`
+- Password: `demo123`
+
+## Funzionalità
+
+- **Captive Portal personalizzabile** - Logo, colori e testi configurabili
+- **Dashboard Analytics** - Statistiche in tempo reale
+- **Gestione Contatti** - Filtri, ricerca, export CSV/Excel
+- **Analytics Dispositivi** - Grafici dispositivi, OS, browser
+- **Mappa Provenienza** - Visualizzazione geografica contatti
+- **Storico Accessi** - Log dettagliato di tutti gli accessi
+- **Email Marketing** - Creazione e invio campagne
+- **Multi-Sede** - Gestione di più locali
+- **Impostazioni** - Personalizzazione completa con preview live
+
+## Tecnologie
+
+- **Next.js 14** (App Router)
+- **TypeScript**
+- **TailwindCSS**
+- **Recharts** per grafici
+- **Lucide React** per icone
+- **LocalStorage** per persistenza dati demo
+
+## Installazione
 
 ```bash
+# Clona il repository
+git clone <repo-url>
+
+# Installa dipendenze
+npm install
+
+# Avvia in sviluppo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Apri [http://localhost:3000](http://localhost:3000) nel browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Struttura Pagine
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| URL | Descrizione |
+|-----|-------------|
+| `/` | Homepage landing page |
+| `/portal/ristorante-da-mario` | Captive Portal demo |
+| `/portal/ristorante-da-mario/success` | Pagina successo connessione |
+| `/admin/login` | Login dashboard |
+| `/admin/dashboard` | Dashboard principale |
+| `/admin/contacts` | Gestione contatti |
+| `/admin/analytics` | Analytics dispositivi |
+| `/admin/geography` | Provenienza geografica |
+| `/admin/access-logs` | Storico accessi |
+| `/admin/email` | Email marketing |
+| `/admin/locations` | Gestione sedi |
+| `/admin/settings` | Impostazioni |
 
-## Learn More
+## Deploy su Vercel
 
-To learn more about Next.js, take a look at the following resources:
+Il progetto è pronto per il deploy su Vercel:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Build
+npm run build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Deploy (con Vercel CLI)
+vercel
+```
 
-## Deploy on Vercel
+Oppure collega il repository a Vercel per deploy automatici.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Note
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Questa è una **demo dimostrativa** con dati simulati
+- I dati sono salvati in localStorage del browser
+- Non richiede database o backend
+- Perfetta per mostrare le funzionalità al cliente
+
+## Licenza
+
+Demo dimostrativa - Tutti i diritti riservati.
